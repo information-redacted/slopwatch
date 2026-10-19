@@ -46,7 +46,11 @@
 
   function getRepo() {
     var parts = location.pathname.split("/").filter(Boolean);
-    if (parts.length != 2) {
+    if (parts.length < 2) {
+      return null;
+    }
+
+    if (parts.length > 2 && parts[2].toLowerCase() != "tree") {
       return null;
     }
 
@@ -196,6 +200,7 @@
   }
 
   async function run() {
+    // hack: hijacking turbo load causes a double-run :(
     if (location.pathname == lastPath) {
       return;
     }
