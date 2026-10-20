@@ -14,6 +14,7 @@
   var SLOP_USERS = [
     "claude",
     "cursoragent",
+    "codex",
   ];
 
   var SLOP_APPS = [
@@ -26,6 +27,9 @@
     "/apps/gemini-code-assist",
     "/apps/devin-ai-integration",
     "/apps/factory-droid",
+    "/apps/sourcery-ai",
+    "/apps/greptile-apps",
+    "/apps/ellipsis-dev",
   ];
 
   var MAX_TRIES = 8;
