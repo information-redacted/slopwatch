@@ -13,14 +13,18 @@
 
   var SLOP_USERS = [
     "claude",
-    "coderabbitai",
+    "cursoragent",
   ];
 
   var SLOP_APPS = [
     "/apps/github-copilot-cli",
     "/apps/copilot-pull-request-reviewer",
     "/apps/copilot-swe-agent",
-    "/apps/chatgpt-codex-connector"
+    "/apps/chatgpt-codex-connector",
+    "/apps/anthropic-code-agent",
+    "/apps/coderabbitai",
+    "/apps/gemini-code-assist",
+    "/apps/devin-ai-integration"
   ];
 
   var MAX_TRIES = 8;
