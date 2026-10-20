@@ -24,7 +24,8 @@
     "/apps/anthropic-code-agent",
     "/apps/coderabbitai",
     "/apps/gemini-code-assist",
-    "/apps/devin-ai-integration"
+    "/apps/devin-ai-integration",
+    "/apps/factory-droid",
   ];
 
   var MAX_TRIES = 8;
