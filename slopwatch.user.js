@@ -196,7 +196,7 @@
       var link = document.createElement("a");
       link.textContent = m.login || m.path;
       if (m.path) {
-        link.href = "https://github.com/search?q=repo:" + name + " " + (m.path.charAt(0) == "/" ? "" : "/") + m.path + "&type=commits";
+        link.href = "https://github.com/search?q=repo:" + name + " \"" + (m.path = m.path.startsWith("/apps/") ? m.path.slice(6) + "[bot]" : m.path) + "\"&type=commits";
       }
       banner.appendChild(link);
 
